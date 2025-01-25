@@ -1,13 +1,14 @@
 package Models;
 
 public class Motorcycle extends vehicle{
+    private  final  int FIxtime=3;
     public Motorcycle(String NAME) {
         super(NAME);
     }
 
     @Override
     public int GetFixTime() {
-        return 3 ;
+        return FIxtime ;
     }
 
     @Override
