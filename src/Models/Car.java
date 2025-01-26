@@ -1,6 +1,6 @@
 package Models;
 
-public class Car extends  vehicle {
+public class Car extends  Vehicle {
 
     private  final  int FIxtime=5;
     public Car(String NAME) {

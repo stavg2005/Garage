@@ -1,11 +1,11 @@
 package Models;
 
-public abstract class vehicle implements Fixable {
+public abstract class Vehicle implements Fixable {
 
     protected  String name;
 
     public   abstract  int GetFixTime();
-public vehicle(String NAME){
+public Vehicle(String NAME){
     name = NAME;
 }
 

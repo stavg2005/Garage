@@ -1,6 +1,7 @@
 package Models;
 
-public class Motorcycle extends vehicle{
+public class Motorcycle extends Vehicle{
+
     private  final  int FIxtime=3;
     public Motorcycle(String NAME) {
         super(NAME);

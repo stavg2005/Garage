@@ -6,13 +6,13 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class GarageLib {
-    private int counter = 0; // Tracks remaining time for current vehicle
-    private int index = 0; // Tracks current vehicle being fixed
+    private int counter = 0;
+    private int index = 0;
     private final Protocol_Garage protocol;
-    private final ArrayList<vehicle> vehicles;
-    private ScheduledExecutorService executor; // Timer executor for periodic tasks
+    private final ArrayList<Vehicle> vehicles;
+    private ScheduledExecutorService executor;
 
-    public GarageLib(Protocol_Garage protocol, ArrayList<vehicle> vehicles) {
+    public GarageLib(Protocol_Garage protocol, ArrayList<Vehicle> vehicles) {
         this.protocol = protocol;
         this.vehicles = vehicles;
     }

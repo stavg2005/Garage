@@ -1,14 +1,16 @@
 package Models;
 
+import Data.DB;
+
 import java.util.Scanner;
 
 public class MainScreen {
-    private final Scanner scanner = new Scanner(System.in); // Use final for constants
-    private final DB manager = new DB(); // Database manager instance
+    private final Scanner scanner = new Scanner(System.in);
+    private final DB manager = new DB();
 
     private static Protocol_Garage protocolGarage = new Protocol_Garage() {
         @Override
-        public void fixed(vehicle v) {
+        public void fixed(Vehicle v) {
             v.fixed();
         }
     };
@@ -49,7 +51,7 @@ public class MainScreen {
             return Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
             System.out.println("Invalid input! Please enter a valid number.");
-            return -2; // Return an invalid code for retry
+            return -2;
         }
     }
 
